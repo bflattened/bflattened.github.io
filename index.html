@@ -50,22 +50,22 @@
               viewBox="0 0 135 50">
               <path id='path0'>
                 <animate id='d0' attributeName='d' begin='0s;d3.end'
-                  dur='2500ms' fill='remove'
+                  dur='2000ms' fill='remove'
                   values='m0,25 h0 ; m0,25 h155 ; m0,25 h155 ; m0,25 h0' keyTimes='0;0.66666666666667;0.83333333333333;1' />
               </path>
               <path id='path1'>
                 <animate id='d1' attributeName='d' begin='d0.end'
-                  dur='2500ms' fill='remove'
+                  dur='2000ms' fill='remove'
                   values='m0,25 h0 ; m0,25 h155 ; m0,25 h155 ; m0,25 h0' keyTimes='0;0.66666666666667;0.83333333333333;1' />
               </path>
               <path id='path2'>
                 <animate id='d2' attributeName='d' begin='d1.end'
-                  dur='2500ms' fill='remove'
+                  dur='2000ms' fill='remove'
                   values='m0,25 h0 ; m0,25 h155 ; m0,25 h155 ; m0,25 h0' keyTimes='0;0.66666666666667;0.83333333333333;1' />
               </path>
               <path id='path3'>
                 <animate id='d3' attributeName='d' begin='d2.end'
-                  dur='2500ms' fill='remove'
+                  dur='2000ms' fill='remove'
                   values='m0,25 h0 ; m0,25 h155 ; m0,25 h155 ; m0,25 h0' keyTimes='0;0.66666666666667;0.83333333333333;1' />
               </path>
 
@@ -87,7 +87,7 @@
               </text>
             </svg>
           </h2>
-          <p>bflat is a native compiler for C#. The compiler package comes with everything necessary to build C# apps for any of the supported platforms. No messing with crossrootfs, SDKs or NDKs.</p>
+          <p>bflat is a native compiler for C# that comes with everything you need to build C# apps for any of the supported platforms. No additional SDKs or NDKs needed.</p>
           </hgroup>
         </div>
       </section>
@@ -97,19 +97,19 @@
             <div>
               <hgroup>
                 <h4>Battle-tested fundamentals</h4>
-                <p>Based on parts of the .NET 7 SDK that is loved by developers and trusted by organizations all around the world, but reimagined as native-first, and stripped to the bare minimum needed to build native apps with C#.</p>
+                <p>Based on parts of the .NET 7 SDK that is trusted by developers all around the world, but reimagined as native-first and stripped to the bare minimum needed to build native apps with C#. Based on CoreCLR's code generator and GC.</p>
               </hgroup>
             </div>
             <div>
               <hgroup>
                 <h4>Choose your standard library</h4>
-                <p>The compiler comes with two standard libraries. One (DotNet) that is compatible with .NET and supports everything from console to JSON, and another (Zero) that is stripped to bare minimum and doesn't even have a GC.</p>
+                <p>Comes with two standard libraries: one (DotNet) that is compatible with .NET and supports everything from console to JSON, and another (Zero) that is stripped to bare minimum and doesn't even have a GC.</p>
               </hgroup>
             </div>
             <div>
               <hgroup>
                 <h4>Build native apps or shared libraries</h4>
-                <p>Produce native apps and native libraries. Consume the libraries from other languages using their respective FFI interface.</p>
+                <p>Produce native apps and native libraries. Consume C# libraries built with bflat from other languages using their respective FFI interface.</p>
               </hgroup>
             </div>
             <div>
@@ -118,10 +118,15 @@
                 <p>Invoke bflat directly from terminal, integrate with a shell script, Makefile, or even MSBuild. The choice is yours.</p>
               </hgroup>
             </div>
-
           </div>
         </div>
       </section>
+      <section id="platforms">
+        <div class="container">
+          <center><embed src="assets/hello.svg" width="70%"></center>
+        </div>
+      </section>
+
       <section id="platforms">
         <div class="container">
           <hgroup>
@@ -183,8 +188,8 @@
                   </tr>
                   <tr>
                     <td>Starting app size</td>
-                    <td>600+ kB</td>
-                    <td>4+ kB</td>
+                    <td>600 kB</td>
+                    <td>4 kB</td>
                   </tr>
                 </tbody>
               </table>
@@ -192,6 +197,13 @@
           </hgroup>
         </div>
       </section>
+
+      <section id="platforms">
+        <div class="container">
+          <center><img src="assets/uefi.gif" width="70%"></center>
+        </div>
+      </section>
+
 
       <section id="help">
         <div class="container">
