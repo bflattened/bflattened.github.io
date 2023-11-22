@@ -222,6 +222,7 @@
           <hgroup>
           <h2>Get started</h2>
           <p>Download and unpack <a href="https://github.com/bflattened/bflat/releases">a release</a>, optionally place it on your PATH and look at some <a href="https://github.com/bflattened/bflat/tree/master/samples">samples</a></p>
+          <p>If you're on Windows, you can also get bflat from winget: `winget install bflat`.</p>
           </hgroup>
         </div>
       </section>
@@ -247,8 +248,9 @@ Options:
   -c                                                   Produce object file, but don't run linker
   --ldflags &lt;ldflags&gt;                                  Arguments to pass to the linker
   -x                                                   Print the commands
-  --arch &lt;x64|arm64&gt;                                   Target architecture
+  --arch &lt;x86|x64|arm64&gt;                               Target architecture
   --os &lt;linux|windows|uefi&gt;                            Target operating system
+  -m &lt;{isa1}[,{isaN}]|native&gt;                          Target instruction set extensions
   --libc &lt;libc&gt;                                        Target libc (Windows: shcrt|none, Linux: glibc|bionic)
   -Os, --optimize-space                                Favor code space when optimizing
   -Ot, --optimize-time                                 Favor code speed when optimizing
@@ -261,12 +263,15 @@ Options:
   --separate-symbols                                   Separate debugging symbols (Linux)
   --no-debug-info                                      Disable generation of debug information
   --map &lt;file&gt;                                         Generate an object map file
+  --mstat                                              Produce MSTAT and DGML files for size analysis
   -i &lt;library|library!function&gt;                        Bind to entrypoint statically
   --feature &lt;Feature=[true|false]&gt;                     Set feature switch value
   -res, --resource &lt;&lt;file&gt;[,&lt;name&gt;[,public|private]]&gt;  Managed resource to include
   --stdlib &lt;DotNet|None|Zero&gt;                          C# standard library to use
   --deterministic                                      Produce deterministic outputs including timestamps
   --verbose                                            Enable verbose logging
+  --langversion &lt;langversion&gt;                          C# language version ('latest', 'default', 'latestmajor',
+                                                       'preview', or version like '6' or '7.1'
   -?, -h, --help                                       Show help and usage information
           </pre>
         </div>
